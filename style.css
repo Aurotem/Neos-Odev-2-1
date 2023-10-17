@@ -46,16 +46,18 @@ body {
   margin: 80px 0 0 260px;
 }
 .glassframe {
-
   width: 20px;
-}
-.glassframe:nth-child(2) {
-  width: 70px;
-  transform: rotate(30deg) translate(0, 85px);
 }
 .glassframe:nth-child(3) {
   width: 70px;
-  transform: rotate(-30deg) translate(260px, 215px);
+  transform: rotate(30deg) translate(75px, 85px);
+}
+.glassframe:nth-child(4) {
+  width: 70px;
+  transform: rotate(-30deg) translate(300px, 295px);
+}
+.glassframe:last-child{
+  transform: translate(240px,150px);
 }
 /*GlassFrame End*/
 
@@ -73,11 +75,21 @@ body {
 
 .nose {
   width: 80px;
+  height: 60px;
+  border-top: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(181, 160, 128);
+  transform: translateY(-50px);
 }
 
 .mouth {
-  width: 100px;
-  height: 30px;
-  
+  margin-top: 40px;
+  width: 200px;
+  height: 100px;
+  border-radius: 7px 7px 100px 100px;
+  background-color: burlywood;
+  border-style: none;
+  transform: translateY(-50px);
 
 }
