@@ -1,0 +1,83 @@
+/*Reset Values*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+/*Constants*/
+.border {
+  border: 2px solid #000000;
+}
+.radius {
+  border-radius: 100%;
+}
+.center {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+}
+/*-------------------*/
+
+/*Face*/
+.face {
+  grid-template-rows: 250px 100px 150px;
+  width: 500px;
+  height: 500px;
+  background-color: blanchedalmond;
+}
+/*Glasses*/
+.eye-container {
+  width: 500px;
+}
+.glasses {
+  width: 160px;
+  height: 160px;
+  margin: 80px 0 0 80px;
+  position: absolute;
+}
+.glasses:nth-child(1) {
+  margin: 80px 0 0 260px;
+}
+.glassframe {
+
+  width: 20px;
+}
+.glassframe:nth-child(2) {
+  width: 70px;
+  transform: rotate(30deg) translate(0, 85px);
+}
+.glassframe:nth-child(3) {
+  width: 70px;
+  transform: rotate(-30deg) translate(260px, 215px);
+}
+/*GlassFrame End*/
+
+/*Eyes*/
+.eye {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+}
+.eyeball {
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+}
+
+.nose {
+  width: 80px;
+}
+
+.mouth {
+  width: 100px;
+  height: 30px;
+  
+
+}
